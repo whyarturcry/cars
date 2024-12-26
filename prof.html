@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль</title>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/prof.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner container">
+            <a class="header__logo logo" href="main.html">
+                <img class="logo__image" src="./images/header/header_logo.svg" width="154" height="98"
+                    alt="Логотип сайта cars">
+            </a>
+
+            <nav class="header__menu">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="./main.html">Главная</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="./slider">Тачки</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="./test.html">Тест</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link" href="./search.html">Поиск</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header__menu-profile">
+                <a class="header__menu-link" href="./prof.html">
+                    <img class="header__menu-pict" src="./images/header/профиль.svg" width="100" height="50"
+                        alt="Иконка профиля">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="content">
+        <section class="prof">
+            <div class="prof__inner container">
+                <h1 class="prof__heading">
+                    Ваш профиль
+                </h1>
+                <p class="prof__punkt">
+                    Логин: <span class="prof__punkt" id="profile-login">---</span>
+                </p>
+                <p class="prof__punkt">
+                    Дата рождения: <span class="prof__punkt" id="profile-birthdate">---</span>
+                </p>
+                <p class="prof__punkt">
+                    Пол: <span class="prof__punkt" id="profile-gender">---</span>
+                </p>
+                <p class="prof__punkt prof__punkt-last">
+                    Последний результат теста:<span id="profile-test-result">---</span>
+                </p>
+
+                <button class="prof__button" id="leave-page-button">
+                    <a class="prof__button-link" href="./index.html">Покинуть страницу</a>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__body container">
+            <div class="contacts">
+                <div class="contacts__title">
+                    <div class="contacts__title-text">Наши контакты:</div>
+                </div>
+                <div class="contacts__number">
+                    <div class="contacts__number-text">Телефон: +7(777)-777-77-77</div>
+                </div>
+                <div class="contacts__mail">
+                    <div class="contacts__mail-text">Email: information@mail.ru</div>
+                </div>
+            </div>
+            <div class="social">
+                <div class="social__title">
+                    <div class="social__title-text">Наши социальные сети:</div>
+                </div>
+                <div class="social__inst">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img class="inst__img" src="./images/social/inst.svg" alt="inst" width="40" height="40">
+                    </a>
+                </div>
+                <div class="social__x">
+                    <a href="https://twitter.com" target="_blank">
+                        <img class="x__img" src="./images/social/X.svg" alt="x" width="40" height="40">
+                    </a>
+                </div>
+                <div class="social__snap">
+                    <a href="https://www.snapchat.com" target="_blank">
+                        <img class="snap__img" src="./images/social/snap.svg" alt="snap" width="40" height="40">
+                    </a>
+                </div>
+            </div>
+
+            <div class="reserved">
+                <div class="reserved-text">© 2024 Cars. All Rights Reserved.</div>
+            </div>
+        </div>
+    </footer>
+    <script src="./script/prof.js"></script>
+</body>
+
+</html>

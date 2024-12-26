@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reg</title>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/reg.css">
+</head>
+
+<body>
+    <div class="registration">
+        <div class="reg container">
+        <form id="regForm" class="reg__form" novalidate>
+                <h1 class="reg__heading">Авторизация</h1>
+        
+                <div class="reg__pole">
+                    <input id="login" type="text" class="reg__input" placeholder="Логин" required>
+                    <span id="login-error" class="reg__error"></span>
+                </div>
+        
+                <div class="reg__pole">
+                    <input id="birthdate" type="date" class="reg__input" required>
+                    <span id="birth-error" class="reg__error"></span>
+                </div>
+        
+                <div class="reg__pole">
+                    <select id="gender" class="reg__select" required>
+                        <option value="" placeholder="Логин" disabled selected>Пол</option>
+                        <option value="Мужской">Мужской</option>
+                        <option value="Женский">Женский</option>
+                    </select>
+                    <span id="gender-error" class="reg__error-last"></span>
+                </div>
+                
+                <button type="submit" class="reg__button">Войти</button>
+        </form>
+        </div>
+    </div>
+    
+    <script src="./script/reg.js"></script>
+</body>
+
+</html>

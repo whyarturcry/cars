@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест</title>
+        <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/test.css">
+</head>
+
+    <body>
+        <header class="header">
+            <div class="header__inner container">
+                <a class="header__logo logo" href="main.html">
+                    <img class="logo__image" src="./images/header/header_logo.svg" width="154" height="98" alt="Логотип сайта cars">
+                </a>
+
+                <nav class="header__menu">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="./main.html">Главная</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="./slider.html">Тачки</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="./test.html">Тест</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="./search.html">Поиск</a>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <div class="header__menu-profile">
+                    <a class="header__menu-link" href="./prof.html">
+                    <img class="header__menu-pict" src="./images/header/профиль.svg" width="100" height="50" alt="Иконка профиля">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="content">
+        <!-- 1 страница -->
+        <div class="welcome" id="welcome-page">
+            <div class="welcome__wrapper container">
+                <p class="welcome__dialog">
+                    - А ты точно фанат Тачек?<br>
+                    - Да
+                </p>
+                <h1 class="welcome__head">
+                    Это мы сейчас и проверим!
+                </h1>
+                <p class="welcome__text">
+                    Скорее начинай тест
+                </p>
+                <button class="welcome__button" id="start">Начать тест</button>
+            </div>
+        </div>
+
+        <!-- 2 страница -->
+        <div class="test__page container" id="test-page">
+            <div class="test__cards" id="test__cards">
+                <div class="test__card">
+                    <h1 class="test__head">Как зовут главного героя мультфильма?</h1>
+                    <img class="test__img" src="./images/test/q2.svg" alt="Картинка с автомобилями" width="500" height="250">
+                    <div class="test_options">
+                        <button class="test__option" data-correct="false">Макс Скоростной</button>
+                        <button class="test__option" data-correct="false">Быстрый Боб</button>
+                        <button class="test__option" data-correct="true">Молния Маккуин</button>
+                        <button class="test__option" data-correct="false">Винни Вихрь</button>
+                    </div>
+                </div>
+
+                <div class="test__card">
+                    <h1 class="test__head">В каком городе происходит большая часть событий первого фильма?</h1>
+                    <img class="test__img" src="./images/test/q3.svg" alt="Картинка с другом Молнии" width="500" height="250">
+                    <div class="test_options">
+                        <button class="test__option" data-correct="false">Пит-Вэлли</button>
+                        <button class="test__option" data-correct="true">Радиатор-Спрингс</button>
+                        <button class="test__option" data-correct="false">Лос-Анджелес</button>
+                        <button class="test__option" data-correct="false">Спид-Сити</button>
+                    </div>
+                </div>
+
+                <div class="test__card">
+                    <h1 class="test__head">Кто является главным соперником Молнии Маккуина в гонках?</h1>
+                    <img class="test__img" src="./images/test/q1.svg" alt="Картинка с соперником" width="500" height="250">
+                    <div class="test_options">
+                        <button class="test__option" data-correct="true">Чик Хикс</button>
+                        <button class="test__option" data-correct="false">Док Хадсон</button>
+                        <button class="test__option" data-correct="false">Мэтр</button>
+                        <button class="test__option" data-correct="false">Франческо Бернулли</button>
+                    </div>
+                </div>
+
+                <div class="test__card">
+                    <h1 class="test__head">Какой слоган был у Маккуина в первом фильме?</h1>
+                    <img class="test__img" src="./images/test/q4.svg" alt="Картинка с соперником" width="500" height="250">
+                    <div class="test_options">
+                        <button class="test__option" data-correct="false">«Вперед к победе!»</button>
+                        <button class="test__option" data-correct="false">«Гонка — это жизнь!»</button>
+                        <button class="test__option" data-correct="false">«Скорость — мой друг!»</button>
+                        <button class="test__option" data-correct="true">«Я быстр, как молния!»</button>
+                    </div>
+                </div>
+
+                <div class="test__card">
+                    <h1 class="test__head">Какой вид транспорта друг Молнии Маккуина Мэтр?</h1>
+                    <img class="test__img" src="./images/test/q5.svg" alt="Картинка с соперником" width="500" height="250">
+                    <div class="test_options">
+                        <button class="test__option" data-correct="false">Автобус</button>
+                        <button class="test__option" data-correct="true">Эвакуатор</button>
+                        <button class="test__option" data-correct="false">Грузовик</button>
+                        <button class="test__option" data-correct="false">Пикап</button>
+                    </div>
+                </div>
+
+                <div class="test__card">
+                    <h1 class="test__head">Какой вид топлива использует Мэтр?</h1>
+                    <img class="test__img" src="./images/test/q6.svg" alt="Картинка с соперником" width="500" height="250">
+                    <div class="test_options">
+                        <button class="test__option" data-correct="true">Дизель</button>
+                        <button class="test__option" data-correct="false">Электричество</button>
+                        <button class="test__option" data-correct="false">Бензин</button>
+                        <button class="test__option" data-correct="false">Пропан</button>
+                    </div>
+                </div>
+            </div>
+            <button class="finish__button" id="finish">Завершить тест</button>
+        </div> 
+
+        <!-- 3 страница -->
+        <div class="result"  id="result-page">
+            <div class="result__wrapper container">
+                <h1 class="result__head">
+                    Вот это да!
+                </h1>
+                <p class="result__text">
+                    Ваш результат <span id="score">0</span> из 6</p>
+                </p>
+                <button class="restart__button" id="restart">Пройти еще раз</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__body container">
+            <div class="contacts">
+                <div class="contacts__title">
+                    <div class="contacts__title-text">Наши контакты:</div>
+                </div>
+                <div class="contacts__number">
+                    <div class="contacts__number-text">Телефон: +7(777)-777-77-77</div>
+                </div>
+                <div class="contacts__mail">
+                    <div class="contacts__mail-text">Email: information@mail.ru</div>
+                </div>
+            </div>
+            <div class="social">
+                <div class="social__title">
+                    <div class="social__title-text">Наши социальные сети:</div>
+                </div>
+                <div class="social__inst">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img class="inst__img" src="./images/social/inst.svg" alt="inst" width="40" height="40">
+                    </a>
+                </div>
+                <div class="social__x">
+                    <a href="https://twitter.com" target="_blank">
+                        <img class="x__img" src="./images/social/X.svg" alt="x" width="40" height="40">
+                    </a>
+                </div>
+                <div class="social__snap">
+                    <a href="https://www.snapchat.com" target="_blank">
+                        <img class="snap__img" src="./images/social/snap.svg" alt="snap" width="40" height="40">
+                    </a>
+                </div>
+            </div>
+    
+            <div class="reserved">
+                <div class="reserved-text">© 2024 Cars. All Rights Reserved.</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script/test.js"></script>
+</body> 
+</html>
