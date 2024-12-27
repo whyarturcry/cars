@@ -15,7 +15,6 @@ startButton.addEventListener('click', () => {
 	quizPage.style.display = 'block' 
 })
 
-
 document.querySelectorAll('.test__card').forEach(card => {
 	const options = card.querySelectorAll('.test__option') 
 
