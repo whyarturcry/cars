@@ -14,24 +14,22 @@
         <div class="reg container">
         <form id="regForm" class="reg__form" novalidate>
                 <h1 class="reg__heading">Авторизация</h1>
-        
                 
                 <div class="reg__pole">
-                    <input id="login" type="text" class="reg__input" placeholder="Логин" required>
+                    <input id="login" type="text" class="reg__input" placeholder="Логин" minlength="4" maxlength="10"pattern="[\u0400-\u04FF\d]{4,10}"
+                        title="Логин должен содержать только русские буквы и цифры, от 4 до 10 символов." required>
                     <span id="login-error" class="reg__error"></span>
                 </div>
-        
+                
                 <div class="reg__pole">
-                    <input id="birthdate" type="date" class="reg__input" required>
+                    <input id="birthdate" type="date" class="reg__input" min="1950-01-01" max="" required>
                     <span id="birth-error" class="reg__error"></span>
                 </div>
-        
+                
                 <div class="reg__pole">
                     <select id="gender" class="reg__select" required>
-                        <option value="" placeholder="Логин" disabled selected>Пол</option>
-                        
+                        <option value="" disabled selected>Пол</option>
                         <option value="Мужской">Мужской</option>
-                        
                         <option value="Женский">Женский</option>
                     </select>
                     <span id="gender-error" class="reg__error-last"></span>
